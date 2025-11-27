@@ -87,8 +87,8 @@ def main():
     # Optional arguments
     parser.add_argument('--fdr-threshold', type=float, default=0.05,
                         help='FDR threshold for significance (default: 0.05)')
-    parser.add_argument('--score-column', default='adj.P.Val',
-                        help='Column name for probability scores (default: adj.P.Val)')
+    parser.add_argument('--score-column', default='P.Value',
+                        help='Column name for probability scores (default: P.Value)')
     parser.add_argument('--prediction-column', default='Significant',
                         help='Column name for binary predictions (default: Significant)')
     
