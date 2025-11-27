@@ -74,10 +74,10 @@ def main():
         description='Calculate classification metrics for DAA results'
     )
     
-    # Required arguments
-    parser.add_argument('--results', required=True,
+    # Required arguments - use names matching config.cfg
+    parser.add_argument('--methods.results', required=True, dest='results',
                         help='Path to method results CSV file')
-    parser.add_argument('--labels', required=True,
+    parser.add_argument('--data.true_labels', required=True, dest='labels',
                         help='Path to true labels CSV file')
     parser.add_argument('--output_dir', required=True,
                         help='Output directory')
